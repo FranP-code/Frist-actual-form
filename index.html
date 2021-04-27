@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <form action="backEnd.php" method="POST">
-        <input type="text" placeholder="Name" name="name" required>
-        <input type="email" placeholder="E-mail" name="electronic-mail" required>
-        <textarea placeholder="Message" name="message" required minlength="35"></textarea>
-        <input type="submit" placeholder="Enviar" name="submit" required>
+    <form action="backEnd.php" method="POST" class="form">
+        <input type="text" placeholder="Name" name="name" required class="name">
+        <input type="email" placeholder="E-mail" name="electronic-mail" required class="email">
+        <textarea placeholder="Message" name="message" required minlength="35" class="message"></textarea>
+        <input type="submit" placeholder="Enviar" name="submit" required class="submit">
     </form>
 </body>
 </html>

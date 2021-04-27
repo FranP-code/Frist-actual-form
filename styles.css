@@ -1,0 +1,32 @@
+.form {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(200px 4 0px);
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.name {
+    grid-column: 1/3;
+    background-color: #0e93ff99;
+    border: 1px solid #0e93ff;
+    height: 30px;
+}
+
+.email {
+    grid-column: 1/3;
+    background-color: #fffb0e99;
+    border: 1px solid #c7c400;
+    height: 30px;
+}
+
+.message {
+    grid-column: 1/3;
+    background-color: #ff0e0e99;
+    border: 1px solid #ff0e0e;
+}
+
+.submit {
+    grid-column: 1/3;
+}
