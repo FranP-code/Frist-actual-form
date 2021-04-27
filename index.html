@@ -7,11 +7,11 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="index.php" method="POST">
-        <input type="text" placeholder="Name" name="name">
-        <input type="email" placeholder="E-mail" name="electronic-mail">
-        <textarea placeholder="Message" name=""></textarea>
-        <input type="submit" placeholder="Enviar">
+    <form action="backEnd.php" method="POST">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="E-mail" name="electronic-mail" required>
+        <textarea placeholder="Message" name="message" required minlength="35"></textarea>
+        <input type="submit" placeholder="Enviar" name="submit" required>
     </form>
 </body>
 </html>
