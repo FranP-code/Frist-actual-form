@@ -1,16 +1,27 @@
 <?php
 
+$error = ['Name not placed', 'Email not placed', 'Message not placed', 'Bad word founded in '];
+
+
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['electronic-mail'];
 
     if (!empty($name)) {
-        $name = filter_var($name, FILTER_SANITIZE_STRING)
+        $name = filter_var($name, FILTER_SANITIZE_STRING);
+
+    } if (!empty($name)) {
+        // if (badWords($name) == true) {
+        //     echo $error[3] . 'name';
+
+        // } else {
+        //     echo $name;
+        // }
 
     }
 
     if (!empty($email)) {
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL)
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 
@@ -20,10 +31,22 @@ if (isset($_POST['submit'])) {
     }
 }
 
-function badWords ($v) {
-    $badWords = ['fuck', 'prick', 'bastard', 'bellend', 'ass', 'cunt', 'balls', 'shit']
-    // Source = https://www.fluentin3months.com/dirty-words/
-}
+// function badWords ($v) {
+//     $badWords = ['fuck', 'prick', 'bastard', 'bellend', 'ass', 'cunt', 'balls', 'shit'];
+//     // Source = https://www.fluentin3months.com/dirty-words/
+
+//     for ($i=0; $i < count($badWords); $i++) { 
+
+//         $a = strpos($v, $badWords[$i]);
+//         echo $a;
+
+//         if ($a != false) {
+//             return true;
+//             break;
+
+//         }
+//     }
+// }
 
 ?>
 
