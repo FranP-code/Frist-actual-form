@@ -25,7 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
     margin-top: 2px;
-    color:#4d5761
+    color:#4d5761;
 }
 
 .message {
@@ -51,4 +51,10 @@
 
 body {
     background-color: #0e93ff50;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0e0e;
+
 }
